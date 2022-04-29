@@ -12,3 +12,5 @@ Also you can control the scene with the following controls:<br><br>
 <br>
 <br>
 <br>
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/91889090/166009426-38b65cb2-8df8-4b92-9ea6-6afab42a24db.gif)
