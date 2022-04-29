@@ -22,19 +22,19 @@ import { OrbitControls } from './OrbitControls.js';
  document.body.appendChild(renderer.domElement);
 
  //add geometry
- const geometry = new THREE.SphereGeometry(1.5,64,64);
+ const geometry = new THREE.SphereGeometry(1.5,256,256);
  const material = new THREE.MeshBasicMaterial();
  const cube = new THREE.Mesh(geometry,material);
  
  const loader = new THREE.TextureLoader();
- loader.load('./sun-uv-map.jpg', (texture)=>{
+ loader.load('./sun-uv-map2.jpg', (texture)=>{
     material.map = texture;
     animate();
  })
 
  scene.add(cube);
 
- camera.position.z = 12;;
+ camera.position.z = 6;
 
  const controls = new OrbitControls(camera, renderer.domElement)
  
@@ -63,7 +63,7 @@ import { OrbitControls } from './OrbitControls.js';
  //animation
  const animate = function(){
      requestAnimationFrame(animate);
-     cube.rotation.x += 0.005;
+     cube.rotation.x += 0.0005;
      cube.rotation.y += 0.005;
      renderer.render(scene,camera);
  }
